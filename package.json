@@ -2,10 +2,10 @@
   "name": "e-commerce",
   "version": "1.0.0",
   "description": "Cool e-commerce website",
-  "main": "server.js",
+  "main": "Backend/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
+    "start": "node Backend/server.js",
     "dev": "concurrently \"npm start\" \"npm run homie-shop\" "
   },
   "author": "devgan",

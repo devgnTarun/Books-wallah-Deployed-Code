@@ -1,0 +1,150 @@
+
+
+.review-box {
+    display: flex;
+    overflow: auto;
+    justify-content: center;
+    margin:  auto;
+    margin-bottom: 30px;
+}
+
+.review-box::-webkit-scrollbar {
+    display: none;
+}
+
+.review {
+    width: 350px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    cursor: pointer;
+    margin: 10px;
+    flex: none;
+    padding: 20px;
+}
+@media (max-width : 370px) {
+    .review {
+        width: 300px;
+    }
+    .profile-pic {
+        width: 30px;
+        height: 30px;
+    }
+}
+@media (max-width : 310px) {
+    .review {
+        width: 98%;
+    }
+}
+
+.review-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.profile-pic img {
+    object-fit: cover;
+    object-position: center;
+    width : 90%;
+    height: 90%;
+}
+
+.name-user {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-user h2 {
+    color: rgb(83, 77, 77);
+    letter-spacing: 0.rem;
+    font-size: 1.2rem;
+    margin: 0;
+}
+.name-user span {
+    color: grey;
+    font-size: 0.7rem;
+}
+
+.review-i {
+    color: orange;
+}
+
+.review-comment {
+    /* padding: 10px; */
+    font-size: 0.7rem;
+    color: rgb(97, 94, 94);
+}
+
+.review:hover {
+    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    -o-transform: translateY(-10px);
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+
+@media (max-width : 500px) {
+    .name-user h2 {
+        font-size: 0.9rem;
+    }
+    .name-user span {
+        font-size: 0.5rem;
+    }
+    .review i {
+        font-size: 0.7rem;
+    }
+}
+
+.noRev{
+    width: 100%;
+    text-align: center;
+    font-size: 1.1em;
+    color: rgb(158, 158, 158);
+    margin-bottom: 30px;
+}
+
+.noProducts {
+    width: 90%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+}
+.noProducts i {
+    font-size: 12em;
+    color: orange;
+    cursor: pointer;
+}
+.noProducts h3 {
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(87, 87, 87);
+    font-weight: 400;
+}
+
+@media (max-width : 580px) {
+    .noProducts {
+        padding-top : 150px;
+    }
+}

@@ -1,0 +1,129 @@
+.allProduct_box{
+    width : 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+.allProduct_box h2 {
+    font-size: 1.6em;
+    color: orange;
+    padding-bottom: 10px;
+    border-bottom: 0.6px solid orange;
+    text-align: center;
+    width: 250px;
+    margin : 15px auto;
+}
+.product_container_box {
+    width : 100%;
+    margin: 15px auto;
+}
+.product_container_box::-webkit-scrollbar {
+    display: none;
+}
+.edit_Icon {
+    color : orange;
+    text-decoration : none;
+}
+
+
+/* Create product page css  */
+
+.create_product_page {
+    min-height : 60vh;
+    width : 100%;
+    display :flex;
+    flex-direction :  column;
+    justify-content : center;
+    align-items: center;
+    padding-top: 50px;
+}
+.create_product_form {
+    width: 90%;
+    min-height: 450px;
+    box-shadow: 10px 0px 10px -10px rgba(0, 0, 0, 0.272);
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px auto;
+}
+.create_product_form h3 {
+    font-size: 1.7em;
+    margin: 15px auto;
+    color: orange;
+    text-align: center;
+    width: 200px;
+}
+.create_product_form div {
+    margin: 7px auto;
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+.create_product_form div label {
+    flex-basis: 30%;
+    font-size: 10px;
+    color: rgb(20, 20, 20);
+}
+.create_product_form div input {
+    flex-basis: 65%;
+    padding: 6px;
+    outline: none;
+    border : none;
+    background-color: rgba(206, 199, 199, 0.566);
+    color: black;
+}
+.create_product_form div textarea {
+    flex-basis: 65%;
+    padding: 10px;
+    outline: none;
+    border : none;
+    background-color: rgba(206, 199, 199, 0.566);
+    color: black;
+    resize: none;
+}
+.create_product_form div select {
+    flex-basis: 65%;
+    padding: 10px;
+    outline: none;
+    border : none;
+    background-color: rgba(206, 199, 199, 0.566);
+    color: black;
+}
+
+.image_box_create {
+    max-width: 80px;
+    max-height: 80px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    overflow: hidden;
+    margin : 5px ;
+}
+.image_box_create img { 
+    width: 100%;
+}
+#create_product_image {
+    overflow: scroll;
+    width: 90%;
+}
+#create_product_image::-webkit-scrollbar {
+    display: none;
+}
+#create_pruduct_button {
+    width: 90%;
+    outline: none;
+    border: none;
+    background-color: orange;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 4px;
+    margin: 15px auto;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    cursor: pointer;
+}

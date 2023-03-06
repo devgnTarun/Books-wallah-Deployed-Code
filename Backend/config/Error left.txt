@@ -1,0 +1,8 @@
+Delete review error left | have to fix it
+
+Get all order admin ----- Checking  ===== Total amount of orders
+
+Some error with stock---- while doing updateorder to delivered
+
+
+Everything working..
