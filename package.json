@@ -5,7 +5,7 @@
   "main": "Backend/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node Backend/server.js",
+    "start": "nodemon Backend/server.js",
     "dev": "concurrently \"npm start\" \"npm run homie-shop\" "
   },
   "author": "devgan",
