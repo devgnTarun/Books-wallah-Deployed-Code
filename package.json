@@ -1,0 +1,33 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "description": "Cool e-commerce website",
+  "main": "Backend/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node Backend/server.js",
+    "dev": "concurrently \"npm start\" \"npm run homie-shop\" "
+  },
+  "author": "devgan",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/data-grid": "^4.0.0-alpha.37",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.1",
+    "cloudinary": "^1.33.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^3.1.2",
+    "mongoose": "^6.6.0",
+    "nodemailer": "^6.8.0",
+    "nodemon": "^2.0.20",
+    "react-alert": "^7.0.3",
+    "react-icons": "^4.7.1",
+    "stripe": "^11.11.0",
+    "validator": "^13.7.0"
+  }
+}
