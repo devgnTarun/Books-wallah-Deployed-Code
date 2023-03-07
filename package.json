@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "dev": "concurrently \"npm start\" \"npm run homie-shop\" "
+    "dev": "concurrently \"npm start\" \"npm run homie-shop\" " 
   },
   "author": "devgan",
   "license": "ISC",
