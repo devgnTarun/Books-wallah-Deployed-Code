@@ -31,10 +31,10 @@ app.use('/api/v1' , user);
 app.use('/api/v1' , order);
 app.use('/api/v1' , payement);
 
-app.use(express.static(path.join(__dirname , './homie-shop/src/build/index.html')))
+app.use(express.static(path.join(__dirname , './homie-shop/build')))
 
 app.get("*" , (req , res ) => {
-    res.sendFile(path.resolve(__dirname , './homie-shop/src/build/index.html'))
+    res.sendFile(path.resolve(__dirname , './homie-shop/build/index.html'))
 })
 //Middle ware usage 
 
