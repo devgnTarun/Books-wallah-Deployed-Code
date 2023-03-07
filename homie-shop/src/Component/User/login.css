@@ -1,0 +1,179 @@
+/* Login.css */
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+.login_box {
+    width: 350px;
+    height: 70%;
+    margin-top: 4vmax;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    display: flex;
+    background-color: white;
+    -webkit-box-shadow: 0px 14px 25px 0px rgba(0, 0, 0, 0.10);
+    -moz-box-shadow: 0px 14px 25px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 14px 25px 0px rgba(0, 0, 0, 0.10);
+}
+.login_box form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1vmax 2vmax;
+}
+.login_box h1 {
+    font-size: 2vmax;
+    margin: 1.5vmax auto;
+    color: orange;
+}
+.login_box form input {
+    width: 100%;
+    margin: 0.7vmax auto ;
+    padding: 7px;
+    outline: none;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border: none;
+    background-color: rgba(132, 132, 132, 0.249);
+}
+.login_box form label {
+    font-size: 1em;
+}
+.login_box form button {
+    color: white;
+    background-color: orange;
+    width: 100%;
+    border: none;
+    padding: 10px ;
+    font-size: 1em;
+    margin: 15px auto;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    outline: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    cursor: pointer;
+}
+.login_box form button:hover {
+    background-color: rgb(255, 123, 0);
+}
+.clippath {
+    width: 100%;
+    min-height: 100vh;
+    z-index: -1;
+    position: absolute;
+    background-color: orange;
+    -webkit-clip-path: polygon(50% 68%, 100% 27%, 100% 100%, 0 100%, 0 27%);
+    clip-path: polygon(50% 68%, 100% 27%, 100% 100%, 0 100%, 0 27%);
+    bottom: 0;
+left: 0;
+}
+
+.forgotpass {
+    padding: 1vmax auto;
+    color: rgb(255, 106, 0);
+    text-decoration: dotted;
+}
+.signbtn {
+    text-decoration: none;
+    color: rgb(30, 30, 30);
+    color: black;
+    background-color: rgba(205, 199, 199, 0.594);
+    margin: 1.5vmax auto;
+    padding: 1px 15px;
+    width: 90%;
+    text-align: center;
+    bottom: 0;
+    margin-top: 3vmax;
+    padding: 1vmax 3vmax;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    transition: 0.4s all;
+    -webkit-transition: 0.4s all;
+    -moz-transition: 0.4s all;
+    -ms-transition: 0.4s all;
+    -o-transition: 0.4s all;
+}
+.signbtn:hover {
+    background-color: rgba(161, 159, 159, 0.594);
+    background-color: black;
+    color: white;
+}
+@media (max-width : 700px) {
+    .login-container {
+        min-height: 80vh;
+    }
+}
+@media (max-width : 580px) {
+    .login-container {
+        padding-top: 160px;
+        padding-bottom: 30px;
+    }
+
+}
+@media (max-width : 400px) {
+    .login_box {
+        width: 300px;
+    }
+}
+@media (max-width : 310px) {
+    .login_box {
+        width: 270px;
+    }
+}
+
+.image_file::-webkit-file-upload-button {
+    color: black;
+    width: 100%;
+    margin-right: 10px;
+    background-color: rgba(132, 132, 132, 0) ;
+    border: none;
+    padding: 7px 20px;
+    cursor: pointer;
+}
+.image_file {
+    background-color: rgba(255, 166, 0, 0.507);
+}
+.registerImage{
+    display: flex   ;
+    align-items: center;
+    justify-content: center;
+}
+.avtarBox {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-top:  5px;
+    margin-right: 5px;
+    overflow: hidden;
+}
+.avtarBox img {
+    width: 100%;
+}

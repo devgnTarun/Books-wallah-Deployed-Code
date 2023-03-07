@@ -1,0 +1,230 @@
+.dashboard {
+    width : 100vw;
+    max-width :100%;
+    display : grid;
+    grid-template-columns : 1fr 3fr;
+    min-height: 60vh;
+    overflow: hidden;
+}
+.dashboard_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 90px; 
+}
+.dashboard_box > h3 {
+    color: orange;
+    border-bottom: 0.5px solid orange;
+    padding-bottom: 10px;
+    width: 250px;
+    text-align: center;
+    font-size: 1.7em;
+}
+
+.dashboardSummary {
+    display: flex;
+    width: 90%;
+    margin: 25px auto;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.dashboardSummary div {
+    width: 200px;
+    height: 100px;
+    margin: 10px 15px;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    cursor: pointer;
+}
+.dashboardSummary div h3 {
+    font-size: 1.7em;
+    margin: 10px auto;
+}
+.dashboardSummary div p {
+    font-size: 1.1em;
+    font-weight: 100;
+}
+
+.line_chart {
+    width: 90%;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    max-height: 300px;
+}
+.doughnut {
+     width: 90%;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    max-height: 300px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Slider js */
+
+.slideBar {
+    min-height: 100vh;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 50px;
+    top: 0;
+    left: 0;
+    background: rgba(251,152,47,1) 100%;
+ background: linear-gradient(180deg , rgba(251,152,47,1) 100%, rgba(253,197,15,1) 0%) ;
+    box-shadow: 10px 0px 10px -10px rgba(0, 0, 0, 0.239);
+    transition: 0.3s all;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    margin: 0px;
+    z-index: 2;
+}
+
+.sideBar_btn {
+    position : absolute;
+    top: 160px;
+    background-color: orange;
+    margin-left: 274px;
+    padding: 10px;
+    color: white;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    display: none;
+}
+.dashContent_box {
+    margin: 45px auto;
+    display: flex;
+    position: fixed;
+    width: 250px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 0;
+}
+.dashContent_box  a {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    text-decoration: none !important;
+    color: white;
+    margin: 4px 0;
+    margin-left: 55px;
+    width: fit-content;
+    padding-top: 5px ;
+    font-size : 13px;
+    padding-bottom: 5px ;
+    font-weight :300;
+}
+
+.dashContent_box  a  i {
+    font-size: 13px;
+    color: white;
+    margin-right: 10px;
+}
+.MuiTreeItem-content {
+    margin-left: 46px !important;
+}
+.MuiTypography-root {
+    font-family: 'Unbounded', "Poppins" !important;
+    background-color: transparent !important;
+    font-size: 13px !important;
+    color: white;
+    padding-top: 5px !important ;
+    padding-bottom: 5px !important ;
+    width: fit-content !important;
+    text-decoration: none !important;
+}
+.MuiTypography-root {
+    text-decoration: none !important;
+    border-bottom: none;
+}
+@media (max-width : 580px) {
+    .slideBar {
+        position: absolute;
+        left: -250px;
+        transition: 0.4s all;
+        -webkit-transition: 0.4s all;
+        -moz-transition: 0.4s all;
+        -ms-transition: 0.4s all;
+        -o-transition: 0.4s all;
+        position: fixed;
+        background-color: orange;
+}
+    .sideBar_btn {
+        display: block;
+    }
+    .dashboard {
+        display: flex;
+        flex-direction: column;
+        padding-top: 75px;
+    }
+    .line_chart , .doughnut {
+        max-height: 60vh;
+        width: 100%;
+    }
+    .slider_sixWindow {
+        transition: 0.4s all;
+        -webkit-transition: 0.4s all;
+        -moz-transition: 0.4s all;
+        -ms-transition: 0.4s all;
+        -o-transition: 0.4s all;
+        min-height: 100vh;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 140px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(251,152,47,1) 100%;
+     background: linear-gradient(180deg , rgba(251,152,47,1) 100%, rgba(253,197,15,1) 0%) ;
+        box-shadow: 10px 0px 10px -10px rgba(0, 0, 0, 0.239);
+        transition: 0.3s all;
+        -webkit-transition: 0.3s all;
+        -moz-transition: 0.3s all;
+        -ms-transition: 0.3s all;
+        -o-transition: 0.3s all;
+        margin: 0px;
+        z-index: 2;
+    }
+}

@@ -1,0 +1,112 @@
+.payement_page {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.payement_form {
+    width: 300px;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 70px;
+    /* border: 0.8px solid rgba(200, 196, 196, 0.409); 
+    border-top: none;
+    padding: 15px 20px; */
+}
+.payement_form h3 {
+    font-size: 1.4em;
+    color: orange;
+    padding-bottom: 8px ;
+    border-bottom: 0.8px solid orange;
+    margin: 10px auto;
+    margin-bottom: 25px;
+}
+.payementInput_div{
+    width: 100%;
+    padding: 10px 15px;
+    align-items: center;
+    justify-content: center;
+    display : flex;
+    margin: 15px auto;
+    border: 0.8px solid rgba(200, 196, 196, 0.409);
+}
+.payement_form div i {
+    flex-basis: 15%;
+    margin: 0px 8px;
+    color: rgb(255, 77, 0);
+    font-size: 1.2em;
+}
+.payementInput {
+    flex-basis: 80%;  
+}
+
+
+.payementBtn {
+    width: 100%;
+    padding: 10px 15px;
+    margin: 10px auto;
+    color: white;
+    background-color: orange;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+.payementBtn:hover{
+    background-color: rgb(255, 89, 0);
+}
+
+
+/* Order plaed css */
+
+.OrderSuccess{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.OrderSuccess i {
+    font-size: 100px;
+    color: orange;
+    margin: 10px auto;
+}
+.OrderSuccess h3 {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px auto;
+}
+.orderDone {
+    padding: 10px 15px;
+    margin: 10px auto;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    background-color: orange;
+    color: white;
+    transition:0.4s all ;
+    -webkit-transition:0.4s all ;
+    -moz-transition:0.4s all ;
+    -ms-transition:0.4s all ;
+    -o-transition:0.4s all ;
+}
+.orderDone:hover {
+    background-color: rgb(255, 111, 0);
+}

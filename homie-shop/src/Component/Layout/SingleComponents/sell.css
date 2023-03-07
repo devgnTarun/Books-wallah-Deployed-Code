@@ -1,0 +1,91 @@
+.sellBook_page {
+    min-height: 90vh;
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.sellBook_page div {
+    width: 90%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.sellBook_page div i {
+    font-size: 8em;
+    padding: 15px;
+    color: orange;
+
+}
+.sellBook_page div h3 {
+    font-size:1.3em;
+    padding: 15px;
+    color: orange;
+    font-weight: 500;
+}
+.sellBook_page > div input {
+    width: 250px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin: 10px auto;
+}
+.sellBook_page > div input:placeholder-shown {
+    color : white;
+}
+
+.sellBook_page > div button {
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+    background-color: orange;
+    color: white;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    font-size: 1em;
+    margin: 10px auto;
+    cursor: pointer;
+}
+.condition_page {
+    width: 90%;
+    min-height: 70vh;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.condition_page h3 {
+    font-size: 14px;
+    color: tomato;
+    font-weight: 300;
+}
+.back_btn {
+    color : white;
+    background-color: orange;
+    padding: 10px 15px;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition : 0.7s all; 
+    margin: 10px auto;
+}
+.back_btn:hover {
+    background-color: rgb(255, 106, 0);
+    padding: 10px 25px;
+
+}

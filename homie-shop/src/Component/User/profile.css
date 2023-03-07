@@ -1,0 +1,112 @@
+.profile_page{
+    min-height: 80vh;
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.left_profile{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-basis: 45%;
+    min-height: 50vh;
+}
+.left_profile h3 {
+    font-size: 1.5em; font-weight: 500;
+    margin: 15px auto;
+    color: orange;
+}
+.profile_image {
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-bottom: 25px;
+}
+.profile_image img {
+    width: 100%;
+}
+.profile_btn {
+    font-size: 1.1em;
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: orange;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.right_profile{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 50vh;
+}
+.right_profile div {
+    width: 100%;
+    text-align: center;
+    padding: 10px auto;
+}
+.right_profile div h4 {
+    color: black;
+    padding: 10px ;
+}
+.right_profile div p {
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(192, 189, 189, 0.235);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: rgb(88, 87, 87);
+}
+.btn_div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (max-width : 500px) {
+    .profile_page {
+        flex-direction: column;
+        padding-top: 90px;
+    }
+    .left_profile {
+        padding: 20px auto;
+    }
+    .profile_page h3 {
+        margin: none;
+    }
+    .profile_image {
+        margin: 10px auto;
+    }
+    .right_profile {
+        padding : 10px auto;
+        width: 90%;
+        margin: 30px auto;
+    }
+}
+@media (max-width : 580px) {
+    .profile_page {
+        padding-top: 150px;
+    }
+   
+}
