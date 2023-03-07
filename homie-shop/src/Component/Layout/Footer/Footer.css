@@ -1,0 +1,91 @@
+footer {
+    /* margin-top: 15vmax; */
+    background-color: rgb(5, 2, 2);
+    color: white;
+    display: flex;
+    padding : 20px;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;    
+    overflow: hidden;
+}       
+.leftFooter {
+   flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    text-align: center;
+}
+.leftFooter h4 {
+    margin : 10px auto;
+    font-size: 1.5em;
+}
+.leftFooter image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin : 5px;
+}
+.leftFooter p {
+    color: rgba(255, 255, 255, 0.675);
+    width: 100%;
+    margin : 10px auto;
+}
+.footerImage {
+    width: 23%;
+    cursor: pointer;
+    /* margin-left: 50px; */
+}
+#appstore {
+    width: 60%;
+    margin-left: 0;
+}
+
+
+.midFooter {
+    flex-basis: 30%;
+    
+   text-align: center;
+}
+.midFooter h1{
+    font-size: 3em;
+    letter-spacing: 3px;
+}
+.midFooter p {
+    min-width: 60%;
+    margin: 1vmax auto;
+}
+.rightFooter {
+   flex-basis: 30%;
+
+    text-align: center;
+    align-items: center;
+}
+.rightFooter  h4{
+    font-size: 1.5em;
+    margin : 10px auto;
+    display: block;
+}
+.rightFooter a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em ;
+    margin: 5px;
+}
+
+@media (max-width : 730px) {
+    .leftFooter, .midFooter , .rightFooter {
+        flex-basis: 45%;
+    }
+    .leftFooter img {
+        margin: 0;
+    }
+}
+@media (max-width : 500px) {
+    .leftFooter, .midFooter , .rightFooter {
+        flex-basis: 90%;
+    }
+}

@@ -1,0 +1,409 @@
+.singleProductCont{
+    width : 100%;
+    display : flex;
+    justify-content : flex-start;
+    padding-top: 8vmax;
+    /* height: 70vh; */
+}
+
+.carousel-container {
+    flex-basis : 50%;
+    padding: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor : 'pointer'
+}
+
+
+.detail-container {
+    width: 60%;
+    flex-basis: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 2em;
+    padding-top: none;
+}
+
+.top_container h1{
+    font-size: 1.6vmax;
+    font-weight: 600;
+}
+.mid_review {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60%;
+}
+.mid_review > span {
+    color: orange    ; 
+}
+
+.bottom_price {
+    width: 100%;
+}
+.nestedcont {
+   display: flex;
+   align-items: center;
+}
+.bottom_price h1 {
+    font-weight: 400;
+    font-size: 2vmax;
+    margin: 1vmax 0 ;
+    color:  orange;
+}
+.quantity_container{
+    display: flex;
+    margin: 10px 0;
+
+    align-items: center ;
+}
+.quantity_container button {
+    border: none;
+    outline: none;
+    padding: 7px 10px ;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s all ;
+    -webkit-transition: 0.5s all ;
+    -moz-transition: 0.5s all ;
+    -ms-transition: 0.5s all ;
+    -o-transition: 0.5s all ;
+    display: flex;
+} 
+.quantity_container button:hover  , .cartBtn:hover {
+    background-color: rgb(255, 123, 0);
+}  
+.quantity_container input {
+    outline: none;
+    border: none;
+    padding: 10px 10px;
+    width: 45px;
+    font-size: 1em;
+    text-align: center;
+    color: black;
+}
+.cartBtn {
+    margin-left: 16px;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    padding: 7px 10px ;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s all ;
+    -webkit-transition: 0.5s all ;
+    -moz-transition: 0.5s all ;
+    -ms-transition: 0.5s all ;
+    -o-transition: 0.5s all ;
+    display: flex;
+    padding: 8px 15px;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+#instock {
+    font-size: 1.2em;
+    width: 30%;
+    border-top: 1px solid rgb(190, 188, 185);
+    border-bottom:  1px solid rgb(190, 188, 185);
+    padding: 10px 0;
+}
+.redColor{
+    color: red;
+}
+.greenColor {
+    color: rgb(8, 211, 8);
+}
+.des-box  {
+    font-size: 1.3em;
+    padding: 10px 0;
+    width: 100%;
+}
+.des-box p {
+    font-size: 0.7em ;
+    padding: 10px 0;
+    color: rgb(147, 143, 143);
+}
+
+.submitReview {
+    padding: 10px 15px;
+    width: 33%;
+    color: white;
+    background-color: orange;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 10px 15px;
+    -webkit-border-radius: 10px 15px;
+    -moz-border-radius: 10px 15px;
+    -ms-border-radius: 10px 15px;
+    -o-border-radius: 10px 15px;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+.submitReview:hover {
+    background-color: rgb(255, 132, 0);
+}
+
+@media (max-width : 1000px) {
+    #instock {
+        width: 50%;
+    }
+}
+@media (max-width : 860px) {
+    .submitReview {
+        width: 50%  ;
+    }
+}
+
+@media (max-width : 700px) {
+    .singleProductCont {
+        flex-direction: column;
+        height: 100%;
+    }
+    .detail-container {
+        align-items: center;
+        width: 100%;
+    }
+    .mid_review{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding: 10px 0;
+    }
+    .bottom_price {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .bottom_price h1 {
+        padding: 10px 0;
+        padding-top: 0;
+    }
+    .nestedcont {
+        padding: 15px 0;
+        padding-top: 0;
+    }
+    #instock {
+        text-align: center;
+        width: 90%;
+    }
+    .des-box {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        flex-direction: column;
+        padding: 10px 0;
+        border-bottom: 1px solid rgb(190, 188, 185);
+    }
+    .submitReview {
+        margin: 10px 0;
+        width: 80%;
+    }
+}
+@media (max-width : 580px) {
+    .singleProductCont {
+        padding-top: 160px;
+    }
+}
+
+
+
+
+
+/* Products page css  */
+
+
+.products_page {
+    display: flex;
+    overflow: hidden;
+    width: 90%;
+    min-height: 70vh;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.product_h {
+    margin-top: 70px;
+}
+@media (max-width : 580px) {
+    .product_h {
+        margin-top: 160px;
+    }
+}
+
+/* Products page pagiation box  */
+
+.pagination_box {
+    display: flex;
+    justify-content: center;
+    margin: 6vmax;
+}
+.pagination{
+    display: flex;
+}
+
+.item_link {
+    color: orange;
+    list-style-type: none;
+}
+
+.page_link {
+    color: orange;
+    padding: 1vmax 1.5vmax;
+    text-decoration: none;
+    font-size: 1em;
+    border-top: 1px solid orange;
+    border-bottom: 1px solid orange;
+    border-left: 1px solid orange;
+}
+
+.pagination li:last-child a  {
+    border-right: 1px solid orange;
+}
+.page_link:hover {
+    color: white;
+    background-color: rgb(255, 189, 67);
+border: 1px solid  rgb(255, 189, 67);
+}
+
+.paginationActive {
+    color: white;
+    background-color: orange;
+}
+
+.pageLinkActive {
+    color: white;
+    background-color: orange;
+}
+
+.filter_container {
+    position: fixed;
+    min-height: 100vh;
+    background-color: white;
+    top: 0;
+    width: 200px;
+    padding: 30px auto;
+    left: 0;
+    padding: 80px 15px;
+    text-align: center;
+    z-index: 2;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    box-shadow: -10px 5px 50px 5px rgba(0, 0, 0, 0.3);
+
+}
+@media (max-width : 580px) {
+    .filter_container {
+        padding-top: 160px;
+    }
+}
+.closed {
+    left: -200px;
+    box-shadow: none;
+
+}   
+.filterbtn {
+    width: 98px;
+    cursor: pointer;
+    position: absolute;
+    right: -98px ;
+    top: 160px;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background: linear-gradient(orange , rgb(255, 128, 0));
+    color: white;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: 14px;
+}
+.filter_container p {
+    margin: 15px auto;
+    font-size: 13px;
+}
+.categoryBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start ;
+    justify-content: center;
+    padding-left: 46px;
+}
+.categoryBox li {
+    list-style: none;
+    padding: 5px;
+    color: rgb(50, 50, 50);
+    cursor:pointer;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    font-size: 10px;
+}
+.categoryBox li:hover {
+    color: orange;
+}
+
+
+
+
+/* Review dialog boxes css  */
+
+.reviewHeading_dialog{
+    font-size: 1.3em;
+    font-family: "Unbounded";
+    color : orange;
+    width : 100%;
+    text-align: center;
+    margin: 18px auto;
+    font-weight: 300;
+
+}
+.submitReviewDialog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sumitReviewComment {
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    background-color: rgba(207, 201, 201, 0.168);
+    margin: 18px auto;
+    padding: 8px;
+    resize: none;
+}
+.sumitReviewComment::-webkit-scrollbar {
+    display: none;
+}

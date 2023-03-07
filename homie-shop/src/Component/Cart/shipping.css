@@ -1,0 +1,124 @@
+.shipping_page {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    min-height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+
+.shipping_box {
+    width: 350px;
+    min-height: 70%;
+    margin-top: 10px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: 0.5px solid rgba(255, 140, 0, 0.401);
+    display: flex;
+    background-color: white;
+    /*-webkit-box-shadow: 0px 14px 25px -40px rgba(0, 0, 0, 0.045);
+    -moz-box-shadow: 0px 14px 25px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 14px 25px 0px rgba(0, 0, 0, 0.10);
+    */
+}
+.shipping_box form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1vmax 2vmax;
+}
+.shipping_page h2 {
+    font-size: 1.7vmax;
+    margin: 1vmax auto;
+    color: orange;
+    width: 250px;
+    border-bottom: 1px solid orange;
+    text-align: center; 
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+.shipping_box form input,
+.shipping_box form select {
+    width: 100%;
+    margin: 0.7vmax auto ;
+    padding: 7px;
+    outline: none;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border: none;
+    background-color: rgba(132, 132, 132, 0.249);
+}
+.shipping_box form select {
+    padding: 7px 10px;
+}
+.shipping_box form label {
+    font-size: 1em;
+}
+.shippingBtn {
+    color: black;
+    background-color: tomato;
+    width: 100%;
+    border: none;
+    padding: 10px ;
+    font-size: 1em;
+    margin: 15px auto;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    outline: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    cursor: pointer;
+}
+.shippingBtn:hover {
+    background-color: rgb(255, 123, 0);
+    color : white;
+}
+
+@media (max-width : 700px) {
+    .shipping_page {
+        min-height: 80vh;
+    }
+}
+@media (max-width : 400px) {
+    .shipping_box {
+        width: 300px;
+    }
+}
+@media (max-width : 310px) {
+    .shipping_box {
+        width: 270px;
+    }
+}
+
+
+/* PROGRESS STEPS CSSN  */
+
+.MuiStepConnector-line {
+    display: none !important;
+}
+.MuiStepConnector-root {
+    height: 1px;
+    background-color: rgba(255, 174, 0, 0.712);
+}
+.MuiStepConnector-active,
+.MuiStepConnector-completed {
+    background-color: rgb(255, 89, 0);
+    color: white;
+}
